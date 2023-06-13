@@ -4,8 +4,6 @@ public class Cliente {
     private String nombre;
     private String documento;
     private String telefono;
-    private static int idCliente;
-
     
     public String getTelefono(){
         return this.telefono;
@@ -28,8 +26,5 @@ public class Cliente {
         this.nombre = valor;
     }
 
-    public static int getIdCliente(){
-        return idCliente;
-    }
 
 }

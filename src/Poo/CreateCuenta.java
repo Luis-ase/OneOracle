@@ -3,13 +3,13 @@ package Poo;
 public class CreateCuenta {
     public static void main(String[] args) {
         // instanciar una cuenta
-        check primeraCuenta = new check();
+        check primeraCuenta = new check(2,3);
         // forma de ingresar valor a la cuenta 
         primeraCuenta.saldo = 100;
-        check segunda = new check();
+        check segunda = new check(2,3);
         segunda.saldo = 100;
         /*
-         * new check = {
+         * new check= {
          *  
          *  double saldo;
             int agencia;
@@ -29,9 +29,10 @@ public class CreateCuenta {
          * 
          */
         Cliente nostradamus = new Cliente();
-        check cuentaNostra = new check();
+        check cuentaNostra = new check(2,3);
         cuentaNostra.titular= nostradamus;
         System.out.println(nostradamus);
         System.out.println(cuentaNostra.titular);
+        check.getTotalDeCuentas();
     }
 }

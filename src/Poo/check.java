@@ -6,6 +6,20 @@ public class check {
     int agencia;
     int numero;
     Cliente titular;
+    private static int totalDeCuentas =0;
+
+    public check(int agencia,int numero){
+        this.agencia = agencia;
+        this.numero = numero;
+       
+        check.totalDeCuentas++;
+    }
+
+    public static void getTotalDeCuentas(){
+        System.out.println(check.totalDeCuentas);
+    }
+    
+    
     public void depositar(double valor){
         this.saldo = this.saldo +valor;
     }
