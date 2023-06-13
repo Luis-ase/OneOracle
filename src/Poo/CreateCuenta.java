@@ -28,5 +28,10 @@ public class CreateCuenta {
          * }
          * 
          */
+        Cliente nostradamus = new Cliente();
+        check cuentaNostra = new check();
+        cuentaNostra.titular= nostradamus;
+        System.out.println(nostradamus);
+        System.out.println(cuentaNostra.titular);
     }
 }
