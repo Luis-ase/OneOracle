@@ -6,7 +6,7 @@ public class Funcionario {
     private double salario;
 
     public Funcionario(){
-        
+
     }
     /**
      * @return String return the nombre
@@ -28,6 +28,22 @@ public class Funcionario {
     public String getDocumento(){
         return this.documento;
     }
+    public void setDocumento(String valor){
+         this.documento= valor;
+    }
 
+    public void setSalario(double valor){
+        this.salario = valor;
+    }
 
+    public double getSalario(){
+        return this.salario;
+    }
+
+    public double getBonificacion(double valorDeLaBonificacion){
+        double bonificacion = this.salario * valorDeLaBonificacion;
+        System.out.println("tu bonificacion total es del " + bonificacion);
+        this.salario += bonificacion;
+        return this.salario;
+    }
 }
